@@ -1,6 +1,5 @@
 #! /usr/bin/env python
 # latlon_4.py - for use in Chapter 10 PCfB
-# ,o9llllllllllllllllllllllllll
 # This program reads in a file containing several columns of data, 
 # and returns a file with decimal converted value and selected data fields.
 # The process is: Read in each line of the example file, split it into
@@ -46,7 +45,7 @@ WriteOutFile = True
 # Open the input file
 InFile = open(InFileName, 'r')
 
-HeaderLine = 'dive\tdepth\tlatitude\tlongitude\tdate\tcomment'
+HeaderLine = 'dive\tdepth\tlatitude\tlongitude\tdate'
 print (HeaderLine)
 
 # Open the output file. Do this outside the loop
@@ -81,8 +80,8 @@ for Line in InFile:
 		LonDegrees = decimalat(ElementList[3])
 		# Create string to 5 decimal places, padded to 10 total characters
 		# (using line continuation character \)
-		OutString = "%s\t%4s\t%10.5f\t%10.5f\t%9s\t%s" % \
-                         (Dive,Depth,LatDegrees,LonDegrees,Date,Comment)
+		OutString = "%s\t%4s\t%10.5f\t%10.5f\t%9s" % \
+                         (Dive,Depth,LatDegrees,LonDegrees,Date)
 		print (OutString)
 		if WriteOutFile:
 			OutFile.write(OutString + '\n') # remember the line feed!
