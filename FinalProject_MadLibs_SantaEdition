@@ -1,0 +1,50 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Nov 21 18:42:18 2018
+
+@author: Ingrid
+"""
+
+def madLibs():
+  name = raw_input("Give me a name") 
+  noun = raw_input("Give me a noun")
+  adj = raw_input("Give me an adjective")
+  verb = raw_input("Give me a verb")
+  exclamation = raw_input("Give me an exclamation")
+  verb2 = raw_input("Give me a verb in past tense") # Watch your variable names!
+  verb3 = raw_input("Give me a verb in past tense")
+  noun2 =  raw_input("Give me a plural noun")
+  adj2 = raw_input("Give me an adjective")
+  noun3 = raw_input("Give me a noun")
+  adj3 = raw_input("Give me an adjective")
+  game = raw_input("Give me a type of game")
+  name2 = raw_input("Give me another name")
+  adj4 = raw_input("Give me an adjective")
+  adj5 = raw_input("Give me an adjective")
+  cloth = raw_input("Give me an article of clothing")
+  adverb = raw_input("Give me an adverb")
+  
+  print ""
+  print ""
+  print "Dear Santa,"
+  print ""
+  print "My name is " + name + ", and all year I have been a very, very good" + noun + "."
+  print "I have been" + adj + " at school, and when my teacher asked me to" + verb + " the black-board, I just said," + exclamation + "!"
+  print "I have not" + verb2 + " or" + verb3 + "."
+  print "Not even once. And I have helped  a lot of old" + noun2 + " cross the street."
+  print "Because I have been so" + adj2 + ", I am sure you are going to bring me a brand new" + noun3 + " with" + adj3 + " wheels."
+  print "I would also like to have a/an" + game + " raquet."
+  print "And a secret microphone so I can spy on" + name2 + " and learn all his/her" + adj4 + " secrets."
+  print "Well, Santa, I know you will put all of these" + adj5 + " presents in my" + cloth + " on Christmas."
+  print "Or else I will have been good for nothing."
+  print ""
+  print adverb + ","
+  print ""
+  print name
+
+madLibs()
+
+#try backslash or forward slash to keep reading the code to format it better
+# look for evidence for variant classification of clinical reports
+# supplemental material
+# if statement, it's the one 
