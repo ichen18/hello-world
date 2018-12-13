@@ -1,0 +1,26 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Dec  9 17:50:23 2018
+
+@author: Ingrid
+"""
+
+def variantcuration():
+    #for Likely Pathogenic Variants
+  gene = raw_input("Give me the gene transcript") 
+  variant = raw_input("Give me the gene variant")
+  disease = raw_input("Give me the associated disease")
+  inheritance = raw_input("Give me the inheritance pattern")
+  publish = raw_input("Has this variant been published? Input 'has' or 'has not'")
+  purpose = raw_input("What is the function of this gene?")
+  occurrence = raw_input("What type of occurence is this individual? De novo or something else?")  
+
+  print ""
+  print ""
+  print "The " + variant + " variant in the " + gene + publish + " been published, so to our knowledge, but was observed as a " + occurrence + " in this individual whose phenotype matches " + disease + " described for this gene. "
+  print "The " + variant + purpose + " . "
+  print " The " + variant + " variant is therefore interpreted to be likely pathogenic for " + disease + " and act in a " + inheritance + " manner. "
+
+  
+variantcuration()
+
