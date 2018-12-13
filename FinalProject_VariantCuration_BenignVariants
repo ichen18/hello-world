@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Dec  9 16:00:59 2018
+
+@author: Ingrid
+"""
+
+def variantcuration():
+    #for Benign Variants
+  location = raw_input("Give me the location of the gene")
+  variant = raw_input("Give me the gene variant")
+  database = raw_input("Give me the database used")
+  frequency = raw_input("Give me the frequency the disease was seen in")
+  disease = raw_input("Give me the associated disease")
+  benign =  raw_input("Benign or not benign?")
+  
+
+  print ""
+  print ""
+  print "The " + variant + " variant found in the " + location + " with " + disease + " has been observed in the " + database + " at a frequency of " + frequency + "."
+  print " The " + variant + " is interpreted to be a " + benign + " variant with respect to " + disease + " . "
+
+  #try to import character return, or regular expressions 
+
+variantcuration()
+ 
+#try backslash or forward slash to keep reading the code to format it better
+# look for evidence for variant classification of clinical reports
+# supplemental material
+# if statement, it's the one 
