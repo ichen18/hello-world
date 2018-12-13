@@ -1,0 +1,28 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Dec  9 17:50:20 2018
+
+@author: Ingrid
+"""
+
+def variantcuration():
+    #for Variants of Unknown Significance
+  gene = raw_input("Give me the gene transcript") 
+  variant = raw_input("Give me the gene variant")
+  disease = raw_input("Give me the associated disease")
+  inheritance = raw_input("Give me the inheritance pattern")
+  publish = raw_input("Has this variant been published? Input 'has' or 'has not'")
+  purpose = raw_input("What is the function of this gene?")
+  was = raw_input("Was this variant observed? Input 'was' or 'was not'")
+  num = raw_input("How many observations was this variant seen in?")
+  race = raw_input("What race/s was this variant seen in?")
+  certain =raw_input("Does this variant have certain or uncertain significance? Input 'certain' or 'uncertain'")
+
+  print ""
+  print ""
+  print "The " + inheritance + variant + " variant in the " + gene + publish + " been published, so to our knowledge, " + variant + purpose + " . "
+  print " The " + variant + " variant " + was + " observed in approximately " + num + " individuals of " + race + ". "
+  print " We interpret " + variant + " in " + gene + " gene as a variant of " + certain + " significance with respect to " + disease + ". "
+  
+variantcuration()
+
