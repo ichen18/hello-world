@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Dec  9 17:09:25 2018
+
+@author: Ingrid
+"""
+
+def variantcuration():
+    #for Likely Benign Variants
+  gene = raw_input("Give me the gene transcript") 
+  variant = raw_input("Give me the gene variant")
+  database = raw_input("Give me the database used")
+  disease = raw_input("Give me the associated disease")
+  benign =  raw_input("Benign or not benign?")
+  hilo = raw_input("Is this frequency higher or lower than expected?")
+  analysis = raw_input("What type of analysis are you doing?")
+  mutation = raw_input("What type of genetic mutation is this?")
+  rare = raw_input("Is this genetic mutation rare or not rare?")
+  function = raw_input("Is this a gain or loss of function?")
+
+  print ""
+  print ""
+  print "The " + variant + " variant found in the " + gene + " gene has been observed in " + database + " . "
+  print " This allele frequency would be " + hilo + " than that expected, based on the prevalence of " + disease + " in the population. "
+  print " In " + analysis + " predicts a " + benign + " impact."
+  print " A " + mutation + " changes are relatively " + rare + " in gene " + gene + " , as most variants result in a " + function + ". "
+  print " Based on this information, the variant is likely " + benign + " with respect to " + disease + ". "
+
+variantcuration()
+
