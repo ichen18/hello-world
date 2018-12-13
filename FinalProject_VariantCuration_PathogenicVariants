@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Dec  9 18:02:27 2018
+
+@author: Ingrid
+"""
+
+def variantcuration():
+    #for pathogenic variants
+  gene = raw_input("Give me the gene transcript") 
+  variant = raw_input("Give me the gene variant")
+  disease = raw_input("Give me the associated disease")
+  inheritance = raw_input("Give me the inheritance pattern")
+  num = raw_input("How many observations was this variant seen in?")
+  zygosity = raw_input("What's the zygosity?")
+  famnum = raw_input("How many families was this variant seen in?")
+  
+  
+  print ""
+  print ""
+  print "The " + variant + " pathogenic variant in the " + gene + " gene has been reported previously in patients with " + disease + " . "
+  print " The " + num + " of affected individuals were " + zygosity + " for the variant in " + famnum + " families. "
+  print " The individual has a collection of clinical features that are highly specific for " + disease + " and for which pathogenic " + variant + " variant in the " + gene + " gene are the only known cause. "
+  print " This provides a higher probability that any variant identified would be pathogenic. "
+  print " In summary, this collective evidence supports " + variant + " as a " + inheritance + " pathogenic for " + disease + " . "
+
+variantcuration()
